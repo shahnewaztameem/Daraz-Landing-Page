@@ -36,11 +36,26 @@ header{
   z-index: 1000;
 }
 
+/*
+ul.main-nav{
+  display: inline-block;
+}
+
+nav.main-navbar{
+  background: #ececec !important;
+  color: #000 !important;
+  border-color: #ececec !important;
+}*/
+
 .top-header{
   position: relative;
   background: #ececec;
   color: #000;
   width: 100%;
+}
+
+.top-header ul{
+  display: inline-block;
 }
 
 .top-header nav ul li{
@@ -114,9 +129,32 @@ header{
   height: 576px;
 }*/
 
+.banner-section{
+  position: relative;
+}
+
+.banner-section-inner{
+  position: relative;
+}
+
 .product-list{
   height: 100%;
+/*  position: absolute;
+  left: 7%;*/
+  z-index: 999;
+  padding-left: 10px;
+  background: #fff;
+  padding-top: 10px;
+  border: 2px solid brown;
 }
+
+.product-list-content ul li a{
+  display: inline-block;
+  color: gray;
+  font-size: 13px;
+  text-decoration: none;
+}
+
 .owl-theme .owl-nav.disabled+.owl-dots{
   position: relative;
   z-index: 999;
@@ -129,35 +167,39 @@ header{
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   height: 430px
+/*   height: 540px; */
 }
 
 .main-banner .banner-item .banner-item-content img{
-  max-width: 998px;
+  /*
+  max-width: 928px;
   width: 100%;
   height: inherit;
-  float: right;
+  float: right; */
+  height: 415px;
+  width: 100%;
 }
 
 .main-banner .banner-item .banner-item-content.slide-1{
-  /* background-image: url('../img/slider-1.jpg');
+  background-image: url('../img/slider-1.jpg');
    background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;*/
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-color:
 }
 
 .main-banner .banner-item .banner-item-content.slide-2{
-  /* background-image: url('../img/slider-2.jpg');
+   background-image: url('../img/slider-2.jpg');
    background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;*/
+   background-size: contain;
+   background-repeat: no-repeat;
 }
 
 .main-banner .banner-item .banner-item-content.slide-3{
-/*   background-image: url('../img/slider-3.jpg');
+   background-image: url('../img/slider-3.jpg');
    background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;*/
+   background-size: contain;
+   background-repeat: no-repeat;
 }
 
 
@@ -489,4 +531,27 @@ ul.customer-care-list{
   font-size: 12px;
   line-height: 18px;
   color: #999;
+}
+
+@media only screen and (max-width: 991px){
+  .second-header-content img{
+    margin-bottom: 10px;
+  }
+
+  .second-header-content form{
+    margin-bottom: 10px;
+  }
+
+  h2.section-title{
+    text-align: center;
+  }
+
+  .categories-section-row,
+  .product-variety-row {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
 }
