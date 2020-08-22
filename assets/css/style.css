@@ -533,6 +533,10 @@ ul.customer-care-list{
   color: #999;
 }
 
+button.navbar-toggler{
+  background: #000;
+}
+
 @media only screen and (max-width: 991px){
   .second-header-content img{
     margin-bottom: 10px;
@@ -552,6 +556,9 @@ ul.customer-care-list{
     justify-content: center;
   }
 
+  .mall-product-section{
+    justify-content: center;
+  }
 
 
 }
